@@ -55,6 +55,6 @@ workflows:
           requires:
             - deploy_to_prod
           filters:
-            braches:
+            branches:
               only:
                 - master
