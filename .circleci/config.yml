@@ -44,8 +44,8 @@ workflows:
     jobs:
       - build
       - deploy:
-        requires:
-          -build
+          requires:
+            - build
       - deploy_to_prod:
           type: approval
           requires:
@@ -53,4 +53,4 @@ workflows:
             - deploy
       - deploy_production:
           requires:
-            -deploy_to_prod
+            - deploy_to_prod
