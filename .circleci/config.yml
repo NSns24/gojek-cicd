@@ -54,3 +54,7 @@ workflows:
       - deploy_production:
           requires:
             - deploy_to_prod
+          filters:
+            braches:
+              only:
+                - master
